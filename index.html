@@ -23,6 +23,7 @@
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MK7466V"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
+
         <!-- Mobile Only -->
         <div class="grdMobile">
             <!-- Mobile Header -->
@@ -69,11 +70,14 @@
                             </div>
                         </a>
                     </div>
+                    <img class="hintContentImg" src="images/arrowup.png">
+                    <p class="hintContentText">Click the icons above to view our collections.</p>
                 </div>
                 <div class="wBotD">
                     <p class="wBotText">2 object(s) selected.</p>
                 </div>
             </div>
+
             <!-- Mobile About Window -->
             <div class="aboutWM mobileW">
                 <div class="mobileWTop wTop">
@@ -100,6 +104,7 @@
                 <div class="wBotD">
                 </div>
             </div>
+
              <!-- Mobile Size Chart Window -->
              <div class="sizechartWM mobileW">
                 <div class="mobileWTop wTop">
@@ -122,9 +127,61 @@
                         <img src="images/pubmats/sc.png" alt="VIVERE Size Chart" class="sizechartImg">
                     </div>
                 </div>
-                <div class="wBotD">
-                </div>
+                <div class="wBotD"></div>
             </div>
+
+            <!-- Mobile FAQs Window -->
+            <div class="faqsWM mobileW">
+                <div class="mobileWTop wTop">
+                    <div class="mobileWTopInfo">
+                        <img src="images/about.png" class="windowInfoImage">
+                        <p class="windowInfoText">C://FAQs.txt</p>
+                    </div>
+                    <div class="button">
+                        <img src="images/exit.png" class="exitbutton">
+                    </div>
+                </div>
+                <div class="wTopTabs">
+                    <p class="wTopTabsTextD"><u>F</u>ile</p>
+                    <p class="wTopTabsTextD"><u>E</u>dit</p>
+                    <p class="wTopTabsTextD"><u>V</u>iew</p>
+                    <p class="wTopTabsTextD"><u>H</u>elp</p>
+                </div>
+                <div class="mobileWContent">
+                    <div class="faqsWMContent1">
+                        <h1 class="faqsContentMainHeader">FAQs</h1>
+                        <div class="faqsContentFaq">
+                            <h4 class="faqHeader" style="color:#f6a926;">When Will there be restocks?</h4>
+                            <p class="faqText">We are restocking soon.</p>
+                        </div>
+                        <div class="faqsContentFaq">
+                            <h4 class="faqHeader" style="color:#e9462e;">How do I order?</h4>
+                            <p class="faqText">1. Fill up our order form throught the link in our bio or by click the order button on our website<br>2. Wait for us to confirm your order.<br>3. Pay within 3 days.<br>4. Wait for your package to arrive!</p>
+                        </div>
+                            <div class="faqsContentFaq">
+                            <h4 class="faqHeader" style="color:#8c5c5e;">What are the sizes available?</h4>
+                            <p class="faqText">SHIRTS:<br>small (length:25, width:18)<br>medium (length:26, width:19)<br>large (length:27, width:20)<br><br>HOODIES:<br>small (length:26, width:18, sleeve:32.5)<br>medium (length:27, width:20, sleeve:33.5)<br>large (length:28, width:22, sleeve:34.5)</p>
+                        </div>
+                        <div class="faqsContentFaq">
+                            <h4 class="faqHeader" style="color:#c46d6a;">What is your mode of payment?</h4>
+                            <p class="faqText">We accept payments through GCash.</p>
+                        </div>
+                        <div class="faqsContentFaq">
+                            <h4 class="faqHeader" style="color:#43809a;">What are your modes of delivery?</h4>
+                            <p class="faqText">Our delivery options are Grab, Lalamove, and GoGo Xpress.</p>
+                        </div>
+                        <div class="faqsContentFaq">
+                            <h4 class="faqHeader" style="color:black;">Have some Questions?</h4>
+                            <p class="faqText">For further inquiries, you can contact us through email</p><br>
+                            <p class="faqText" style="font-weight: bolder;">vivere.mmnto@gmail.com (for formal business email)</p><br>
+                            <p class="faqText" style="font-weight: bold;">viverecares@gmail.com (for customer service)</p><br>
+                            <p class="faqText">as well as our social media channels.<br>FB: facebook.com/mmntvivere<br>IG: @mmntvivere_<br>TWT: @mmntvivere_</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wBotD"></div>
+            </div>
+
             <!-- Mobile Contacts Window -->
             <div class="contactsWM mobileW">
                 <div class="mobileWTop wTop">
@@ -163,6 +220,8 @@
                             </div>
                         </a>
                     </div>
+                    <img class="hintContentImg" src="images/arrowup.png">
+                    <p class="hintContentText">Click the icons above to view our socmeds.</p>
                 </div>
                 <div class="wBotD">
                     <p class="wBotText">3 object(s) selected.</p>
@@ -201,8 +260,13 @@
                     <p class="iconP">Contacts</p>
                 </div>
             </div>
-      
-
+            <div class="grdAicon5">
+                <div class="icon" onclick="openWindow('faqs')">
+                    <img src="images/faqs.png" alt="FAQS Icon" class="iconImg">
+                    <p class="iconP">FAQs</p>
+                </div>
+            </div>
+  
             <!-- Window Area -->
             <div class="grdAwarea">
                 <h1 class="vivereos">VIVERE-OS</h1>
@@ -378,6 +442,61 @@
                     <img src="images/bot.png" class="wBotImage">
                 </div>
             </div>
+
+             <!-- FAQS Window-->
+            <div id="faqsW">
+                <div class="faqsTop wTop">
+                    <div class="faqsInfo">
+                        <img src="images/contact.png" class="windowInfoImage">
+                        <p class="windowInfoText">C://FAQs.txt</p>
+                    </div>
+                    <div class="button" onclick="closeWindow('faqs')">
+                        <img src="images/exit.png" class="exitbutton">
+                    </div>
+                </div>
+                <div class="wTopTabs">
+                    <p class="wTopTabsTextD"><u>F</u>ile</p>
+                    <p class="wTopTabsTextD"><u>E</u>dit</p>
+                    <p class="wTopTabsTextD"><u>V</u>iew</p>
+                    <p class="wTopTabsTextD"><u>H</u>elp</p>
+                </div>
+                <div class="faqsContent">
+                    <div class="faqsContent1">
+                        <h1 class="faqsContentMainHeader">FAQs</h1>
+                        <div class="faqsContentFaq">
+                            <h4 class="faqHeader" style="color:#f6a926;">When Will there be restocks?</h4>
+                            <p class="faqText">We are restocking soon.</p>
+                        </div>
+                        <div class="faqsContentFaq">
+                            <h4 class="faqHeader" style="color:#e9462e;">How do I order?</h4>
+                            <p class="faqText">1. Fill up our order form throught the link in our bio or by click the order button on our website<br>2. Wait for us to confirm your order.<br>3. Pay within 3 days.<br>4. Wait for your package to arrive!</p>
+                        </div>
+                            <div class="faqsContentFaq">
+                            <h4 class="faqHeader" style="color:#8c5c5e;">What are the sizes available?</h4>
+                            <p class="faqText">SHIRTS:<br>small (length:25, width:18)<br>medium (length:26, width:19)<br>large (length:27, width:20)<br><br>HOODIES:<br>small (length:26, width:18, sleeve:32.5)<br>medium (length:27, width:20, sleeve:33.5)<br>large (length:28, width:22, sleeve:34.5)</p>
+                        </div>
+                        <div class="faqsContentFaq">
+                            <h4 class="faqHeader" style="color:#c46d6a;">What is your mode of payment?</h4>
+                            <p class="faqText">We accept payments through GCash.</p>
+                        </div>
+                        <div class="faqsContentFaq">
+                            <h4 class="faqHeader" style="color:#43809a;">What are your modes of delivery?</h4>
+                            <p class="faqText">Our delivery options are Grab, Lalamove, and GoGo Xpress.</p>
+                        </div>
+                        <div class="faqsContentFaq">
+                            <h4 class="faqHeader" style="color:black;">Have some Questions?</h4>
+                            <p class="faqText">For further inquiries, you can contact us through email</p><br>
+                            <p class="faqText" style="font-weight: bolder;">vivere.mmnto@gmail.com (for formal business email)</p><br>
+                            <p class="faqText" style="font-weight: bold;">viverecares@gmail.com (for customer service)</p><br>
+                            <p class="faqText">as well as our social media channels.<br>FB: facebook.com/mmntvivere<br>IG: @mmntvivere_<br>TWT: @mmntvivere_</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wBotD">
+                    <img src="images/bot.png" class="wBotImage">
+                </div>
+            </div>
+
         </div>
     </body>
     <script src="js/app.js"></script>

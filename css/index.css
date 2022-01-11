@@ -258,18 +258,31 @@ html, body{
     grid-row: 6 / 7;
     grid-column: 2 / 3;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: white;
     box-shadow: black 1px 1px inset, gray -1px -1px inset;
     overflow-y: scroll;
 }
+.hintContentImg{
+    width: .8em;
+    height: .8em;
+}
+.hintContentText{
+    width: 80%;
+    padding: 0;
+    margin: .5em 0 1em 0;
+    text-align: center;
+    font-size: .7em;
+    color: black;
+}
 
 /* Mobile Collections Window */
 .collectionWM{
-    height: 10em;
+    height: 14em;
     margin-top: 4em;
-    grid-template-rows: .25em 1em .25em .5em .25em 6.25em .25em 1em .25em;
+    grid-template-rows: .25em 1em .25em .5em .25em 10.25em .25em 1em .25em;
 }
 .collectionWMContent1{
     width: auto;
@@ -316,11 +329,51 @@ html, body{
     height: 95%;
 }
 
+/*  Mobile FAQs Window */
+.faqsWM{
+    height: 18em;
+    grid-template-rows: .25em 1em .25em .5em .25em 14.25em .25em 1em .25em;
+}
+.faqsWMContent1{
+    width: 80%;
+    padding: .5em;
+    height: 12.25em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.faqsContentFaq{
+    width: auto;
+    height: auto;
+    margin: .5em 0 .5em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.faqsContentMainHeader{
+    width: 100%;
+    margin: .3em 0 .3em 0;
+    font-size: 2em;
+    text-align: center;
+}
+.faqHeader{
+    font-size: 1em;
+    margin: 0 0 .3em 0;
+    padding: 0;
+}
+.faqText{
+    font-size: .7em;
+    margin: 0;
+    padding: 0;
+}
+
 /* Mobile Contacts Window */
 .contactsWM{
-    height: 10em;
+    height: 13em;
     margin-bottom: 2em;
-    grid-template-rows: .25em 1em .25em .5em .25em 6.25em .25em 1em .25em;
+    grid-template-rows: .25em 1em .25em .5em .25em 9.25em .25em 1em .25em;
 }
 .contactsWMContent1{
     width: auto;
@@ -553,6 +606,78 @@ html, body{
     }
     .contactsContentLink{
         margin: .5em 0 .5em 0;
+    }
+
+    /* FAQS Window */
+
+    #faqsW{
+        width: 24em;
+        height: 40em;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #c8c8c8;
+        box-shadow: black 1px 1px, white -1px -1px;
+        display: grid;
+        grid-template-rows: .25em 1.5em .25em 1em .25em 34.5em .25em 1.75em .25em;
+        grid-template-columns: .25em 23.5em .25em;
+        z-index: -1;
+    }
+    .faqsTop{
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+        display: grid;
+        grid-template-columns: 22em 1.5em;
+    }
+    .faqsInfo{
+        height: 1em;
+        width: 21em;
+        justify-self: center;
+        align-self: center;
+        grid-column: 1 / 2;
+        display: flex;
+        align-items: center;
+    }
+    .faqsContent{
+        grid-row: 6 / 7;
+        grid-column: 2 / 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        box-shadow: black 1px 1px inset, lightgray -1px -1px inset;
+        overflow-y: scroll;
+    }
+    .faqsContent1{
+        height: 32.5em;
+        width: 20.5em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .faqsContentFaq{
+        width: 18.5em;
+        height: auto;
+        margin: .5em 0 .5em 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .faqsContentMainHeader{
+        margin: .3em 0 .3em 0;
+        font-size: 4em;
+    }
+    .faqHeader{
+        font-size: 1.5em;
+        margin: 0 0 .3em 0;
+        padding: 0;
+    }
+    .faqText{
+        font-size: 1em;
+        margin: 0;
+        padding: 0;
     }
 
     /* Window Parts */

@@ -11,12 +11,16 @@ $(function(){
     $('#contactsW').draggable({
         containment: 'parent'
     });
+    $('#faqsW').draggable({
+        containment: 'parent'
+    });
 });
 
 let about = document.getElementById("aboutW");
 let diem = document.getElementById("diemW");
 let noctem = document.getElementById("noctemW");
 let contacts = document.getElementById("contactsW");
+let faqs = document.getElementById("faqsW");
 
 function openWindow(window){
     switch(window) {
@@ -35,6 +39,10 @@ function openWindow(window){
         case window = 'contacts':
             contacts.style.width = '21em'
             contacts.style.zIndex = 1;
+            break;
+        case window = 'faqs':
+            faqs.style.width = '24em'
+            faqs.style.zIndex = 1;
             break;
         default:
           // code block
@@ -66,6 +74,12 @@ function closeWindow(window){
             contacts.style.left = 0;
             contacts.style.top = 0;
             contacts.style.width = 0;
+            break;
+        case window = 'faqs':
+            faqs.style.zIndex = -1;
+            faqs.style.left = 0;
+            faqs.style.top = 0;
+            faqs.style.width = 0;
             break;
         default:
           // code block
